@@ -39,14 +39,21 @@
 
 ---
 
-## 📊 GitHub Stats
-<div align="center">
-  <!-- GitHub Stats Card -->
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=ChengWu-Data&show_icons=true&theme=radical" alt="GitHub Stats" />
+## 📊 GitHub Highlights
 
-  <!-- Most Used Languages Card -->
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChengWu-Data&layout=compact&theme=radical" alt="Top Languages" />
-</div>
+<!-- GitHub Stats Card (customized) -->
+[![ChengWu-Data's GitHub stats](https://github-readme-stats.vercel.app/api?username=ChengWu-Data&show_icons=true&theme=radical&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats)
+
+<!-- Trophies -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=ChengWu-Data&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+<!-- Profile Views -->
+![](https://komarev.com/ghpvc/?username=ChengWu-Data&color=blue)
+
+<!-- Custom Badges (optional) -->
+![Badge: Tech Policy Enthusiast](https://img.shields.io/badge/Tech%20Policy-Enthusiast-blue)
+![Badge: Data Explorer](https://img.shields.io/badge/Data-Explorer-brightgreen)
+
 
 > You can customize the theme and other settings by visiting the [GitHub Readme Stats project](https://github.com/anuraghazra/github-readme-stats).
 
