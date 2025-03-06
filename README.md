@@ -55,9 +55,6 @@
 ![Badge: Data Explorer](https://img.shields.io/badge/Data-Explorer-brightgreen)
 
 
-> You can customize the theme and other settings by visiting the [GitHub Readme Stats project](https://github.com/anuraghazra/github-readme-stats).
-
-
 ---
 
 ## 📫 Get in Touch
