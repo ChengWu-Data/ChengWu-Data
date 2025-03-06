@@ -28,13 +28,14 @@
 ---
 
 ## 📌 My Projects
-- **[ChengYu-Data](https://github.com/your-username/ChengYu-Data)**  
-  This repository is special because its `README.md` will show up on my GitHub profile.  
-  Feel free to explore the content and learn more about what I'm working on.
 
-- **Other Notable Projects**:
-  - [Project A](#): One-liner description
-  - [Project B](#): One-liner description
+- **[Housing Price Prediction: An Exploratory Analysis](https://github.com/ChengWu-Data/housing-price-prediction)**  
+  This project explores the relationship between housing attributes and sale prices using extensive exploratory data analysis (EDA). It leverages Python, statistical tests, and interactive visualizations to uncover key factors influencing housing prices.  
+  *Duration: January 2025 – Present*  
+  *Tech Stack: Python (Pandas, NumPy, Matplotlib, Seaborn), Scikit-learn, SQL, and more.*
+
+- **[More Projects on GitHub](https://github.com/ChengWu-Data?tab=repositories)**  
+  Check out my GitHub repositories for a variety of projects ranging from tech policy analysis and digital regulation trends to other innovative data-driven initiatives.
 
 ---
 
@@ -53,7 +54,7 @@
 
 ## 📫 Get in Touch
 - **Email**: [datajourney.chengw@gmail.com](mailto:datajourney.chengw@gmail.com)
-- **Website / Blog**: [[Your Personal Site](https://chengwu-data.github.io/)](#)
+- **Website / Blog**: [[My Site](https://chengwu-data.github.io/)](#)
 - **Social Media**: [LinkedIn](https://www.linkedin.com/in/cheng-wu-1ab27922a)
 
 I’m always open to discussions and feedback—feel free to reach out!
