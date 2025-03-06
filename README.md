@@ -42,20 +42,21 @@
 ## 📊 GitHub Stats
 <div align="center">
   <!-- GitHub Stats Card -->
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=ChengWu-Data&show_icons=true&theme=radical" alt="GitHub Stats" />
 
   <!-- Most Used Languages Card -->
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical" alt="Top Languages" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChengWu-Data&layout=compact&theme=radical" alt="Top Languages" />
 </div>
 
 > You can customize the theme and other settings by visiting the [GitHub Readme Stats project](https://github.com/anuraghazra/github-readme-stats).
 
+
 ---
 
 ## 📫 Get in Touch
-- **Email**: [datajourney.chengw@gmail.com](mailto:datajourney.chengw@gmail.com)
-- **Website / Blog**: [[My Site](https://chengwu-data.github.io/)](#)
-- **Social Media**: [LinkedIn](https://www.linkedin.com/in/cheng-wu-1ab27922a)
+- **Email**: [datajourney.chengw@gmail.com 📧](mailto:datajourney.chengw@gmail.com)
+- **Website / Blog**: [[My Site 🌍](https://chengwu-data.github.io/)]
+- **Social Media**: [LinkedIn 💼](https://www.linkedin.com/in/cheng-wu-1ab27922a)
 
 I’m always open to discussions and feedback—feel free to reach out!
 
