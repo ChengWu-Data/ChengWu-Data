@@ -55,7 +55,7 @@
 
 ## 📫 Get in Touch
 - **Email**: [datajourney.chengw@gmail.com 📧](mailto:datajourney.chengw@gmail.com)
-- **Website / Blog**: [[My Site 🌍](https://chengwu-data.github.io/)]
+- **Website / Blog**: [My Site 🌍](https://chengwu-data.github.io/)
 - **Social Media**: [LinkedIn 💼](https://www.linkedin.com/in/cheng-wu-1ab27922a)
 
 I’m always open to discussions and feedback—feel free to reach out!
