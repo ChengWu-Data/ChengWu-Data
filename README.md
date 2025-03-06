@@ -18,7 +18,7 @@
 ---
 
 ## ✨ About Me
-- 🌱 I’m currently learning: **C+n**, **Data Analysis**, and **Natural Language Processing (NLP)**
+- 🌱 I’m currently learning: **C++**, **Data Analysis**, and **Natural Language Processing (NLP)**
 - 🌎 I live in the **Il, USA** and enjoy connecting with local tech communities
 - 🔭 I’m working on / researching: Exploring the dynamic intersection of technology and policy. I'm analyzing how current digital regulations, data privacy laws, and governmental policies are shaping innovation and the tech industry.
 - 🤝 I’m open to collaborating on: **Open-source data projects**, **multilingual NLP**, and **creative coding** endeavors
