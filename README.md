@@ -16,7 +16,7 @@
 
 ---
 
-### **🔍 Who I Am**
+### ** Who I Am**
 
 I build data-driven systems that translate fragmented operations into scalable workflows — spanning **supply chain compliance**, **demand forecasting**, **pricing analytics**, and **portfolio risk modeling**.
 
@@ -30,7 +30,7 @@ The goal isn't just running models — it's driving decision velocity, traceabil
 
 ---
 
-### **🚀 Impact Summary**
+### ** Impact Summary**
 
 | Category | Result |
 |----------|--------|
@@ -42,11 +42,11 @@ The goal isn't just running models — it's driving decision velocity, traceabil
 
 ---
 
-### **📂 Projects & Systems**
+### ** Projects & Systems**
 
 > Public versions redacted for confidentiality; code released as generalizable templates.
 
-#### **🔧 Core Systems (Cards View)**
+#### ** Core Systems (Cards View)**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Compliance%20Analytics-HTS%20%26%207501-7b68ee?style=for-the-badge">
@@ -65,7 +65,7 @@ The goal isn't just running models — it's driving decision velocity, traceabil
 
 ---
 
-### **🏗 System Architecture (Diagrams)**
+### ** System Architecture (Diagrams)**
 
 
 #### **1️⃣ Compliance / HTS + 7501 Workflow**
@@ -115,7 +115,7 @@ flowchart LR
 
 ---
 
-### **📓 Methodology Library**
+### ** Methodology Library**
 
 Reusable frameworks (beyond code):
 
@@ -133,7 +133,7 @@ Reusable frameworks (beyond code):
 
 ---
 
-### **🛠 Tech Stack**
+### ** Tech Stack**
 
 **Core Analysis**  
 `Python` · `SQL` · `R`
@@ -149,7 +149,7 @@ Reusable frameworks (beyond code):
 
 ---
 
-### **🧬 Language Overview**
+### ** Language Overview**
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ChengWu-Data&layout=compact&theme=nightowl&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)
 
