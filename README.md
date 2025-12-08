@@ -151,8 +151,7 @@ Reusable frameworks (beyond code):
 
 ### **Language Overview**
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ChengWu-Data&layout=compact&theme=nightowl&hide=html,css&cache_seconds=86400)](https://github.com/anuraghazra/github-readme-stats)
-
+[![Top Langs](https://gh-stats-git-main-rudrax16.vercel.app/api/top-langs/?username=ChengWu-Data&layout=compact&theme=nightowl&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
@@ -162,8 +161,8 @@ Reusable frameworks (beyond code):
 <summary>Click to expand</summary>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ChengWu-Data&show_icons=true&theme=nightowl&hide=stars,prs,issues,contribs&cache_seconds=86400" width="420"/>
-  <img src="https://streak-stats.demolab.com?user=ChengWu-Data&theme=nightowl&date_format=%5BY.%5Dn.j&hide_border=false" width="420"/>
+  <img src="https://gh-stats-git-main-rudrax16.vercel.app/api?username=ChengWu-Data&show_icons=true&theme=nightowl&hide=stars,prs,issues,contribs" width="420"/>
+  <img src="https://streak-stats.demolab.com?user=ChengWu-Data&theme=nightowl" width="420"/>
 </p>
 
 </details>
