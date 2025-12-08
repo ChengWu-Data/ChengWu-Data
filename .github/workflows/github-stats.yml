@@ -15,6 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ✅ 先保证有 stats 这个文件夹，后面 git add 就不会报错
+      - name: Ensure stats directory exists
+        run: mkdir -p stats
+
       - name: Generate stats
         uses: lowlighter/metrics@latest
         with:
@@ -23,11 +27,13 @@ jobs:
           template: classic
           base: activity, languages
 
+          # 语言统计配置
           plugin_languages: yes
           plugin_languages_ignored: html,css
           plugin_languages_sections: most-used
           plugin_languages_limit: 6
 
+          # 输出到本仓库的 stats 目录下
           filename: |
             stats/top-langs.png
             stats/github-stats.png
@@ -40,3 +46,4 @@ jobs:
           git add stats
           git commit -m "Update GitHub stats images" || echo "No changes"
           git push
+
