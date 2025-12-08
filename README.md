@@ -151,7 +151,7 @@ Reusable frameworks (beyond code):
 
 ### **Language Overview**
 
-[![Top Langs](https://gh-stats-git-main-rudrax16.vercel.app/api/top-langs/?username=ChengWu-Data&layout=compact&theme=nightowl&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](./stats/top-langs.png)
 
 ---
 
@@ -161,13 +161,14 @@ Reusable frameworks (beyond code):
 <summary>Click to expand</summary>
 
 <p align="center">
-  <img src="https://gh-stats-git-main-rudrax16.vercel.app/api?username=ChengWu-Data&show_icons=true&theme=nightowl&hide=stars,prs,issues,contribs" width="420"/>
-  <img src="https://streak-stats.demolab.com?user=ChengWu-Data&theme=nightowl" width="420"/>
+  <img src="./stats/github-stats.png" width="420"/>
+  <img src="./stats/github-streak.png" width="420"/>
 </p>
 
 </details>
 
 ---
+
 
 
 ### **📍 Roadmap (2025)**
