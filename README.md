@@ -152,7 +152,7 @@ Reusable frameworks (beyond code):
 
 ### **Language Overview**
 
-![Top Langs](./stats/top-langs.png)
+![Top Langs](./stats/top-langs.svg)
 
 ---
 
@@ -162,12 +162,11 @@ Reusable frameworks (beyond code):
 <summary>Click to expand</summary>
 
 <p align="center">
-  <img src="./stats/github-stats.png" width="420"/>
-  <img src="./stats/github-streak.png" width="420"/>
+  <img src="./stats/github-stats.svg" width="420"/>
+  <img src="./stats/github-streak.svg" width="420"/>
 </p>
 
 </details>
-
 
 
 ---
