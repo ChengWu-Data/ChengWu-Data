@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ✅ 拉最新 main（fetch-depth: 0 方便后面 pull/rebase）
+      # 拉最新 main（方便后面 pull/rebase）
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # ✅ 先保证有 stats 目录
+      # 确保有 stats 目录
       - name: Ensure stats directory exists
         run: mkdir -p stats
 
@@ -36,21 +36,25 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_limit: 6
 
-          # 输出文件到本仓库
+          # 输出为 SVG（默认就是 SVG，但这里显式指定一下）
+          config_output: svg
+          config_base64: false
+
+          # 输出文件到本仓库（注意后缀现在是 .svg）
           filename: |
-            stats/top-langs.png
-            stats/github-stats.png
-            stats/github-streak.png
+            stats/top-langs.svg
+            stats/github-stats.svg
+            stats/github-streak.svg
 
       - name: Commit and push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
 
-          # 把 stats 目录加入暂存区（即使已经存在也不会报错）
+          # 把 stats 目录加入暂存区
           git add stats || true
 
-          # 如果没有任何改动，就什么都不做，避免 push 报错
+          # 如果没有任何改动，就直接结束，避免 push 报错
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
@@ -59,7 +63,6 @@ jobs:
           # 有改动才 commit + pull + push
           git commit -m "Update GitHub stats images"
 
-          # 确保和远端 main 同步，避免 non-fast-forward 报错
           git pull --rebase origin main
-
           git push origin HEAD:main
+
