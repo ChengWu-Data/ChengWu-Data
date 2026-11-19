@@ -1,199 +1,127 @@
-<!-- HEADER / HERO SECTION          -->
-<!-- ============================== -->
-
+<h1 align="center">Thea Wu</h1>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=7b68ee&height=80&section=header&text=Cheng%20Wu&fontSize=36&fontColor=ffffff" />
+  <b>Strategy, go-to-market and applied AI, built on data</b><br>
+  M.S. Data Science, Columbia University (Dec 2026) · New York area
 </p>
-
-<h3 align="center">Business-Centered Data Systems • Compliance • Forecasting • Analytics</h3>
 
 <p align="center">
-  <a href="https://chengwu-data.github.io/">Website</a> •
-  <a href="mailto:cheng.w@columbia.edu">Email</a> •
-  <a href="https://www.linkedin.com/in/cheng-wu-1ab27922a/">LinkedIn</a>
+  <a href="https://chengwu-data.github.io/">Website</a> ·
+  <a href="https://chengwu-data.github.io/projects/sponsorscope/">SponsorScope case study</a> ·
+  <a href="https://www.linkedin.com/in/thea-wu-1ab27922a/">LinkedIn</a> ·
+  <a href="mailto:cheng.w@columbia.edu">Email</a>
 </p>
 
----
+I take a messy business decision and find the smallest analysis that changes it: which accounts to prioritize, which price to test, which posting is worth a week of interviews. My background is econometrics and data science, and I work best where analytics meets pricing, customer strategy, revenue operations and AI tools that people actually use.
 
-### **Who I Am**
-
-I build data-driven systems that translate fragmented operations into scalable workflows — spanning **supply chain compliance**, **demand forecasting**, **pricing analytics**, and **portfolio risk modeling**.
-
-My approach blends:
-
-- **Business-first problem framing** (consulting mindset)
-- **Hands-on modeling + pipeline execution** (analyst + DS)
-- **Process + system design for scale** (builder/operator)
-
-The goal isn't just running models — it's driving decision velocity, traceability, and operational leverage.
+I'm graduating in December 2026 and looking for full-time roles in **GTM and revenue operations, strategy and business operations, AI deployment and product operations**, based in New York.
 
 ---
 
-### **Impact Summary**
+## Live from my own project
 
-| Category | Result |
-|----------|--------|
-| Demand Forecasting | **12% lift** in order completion rates |
-| Pipeline Optimization | **40% lower latency** via Spark/Dask |
-| Compliance & Trade | Automated SKU audit workflows & duty validation |
-| Finance & Deals | Analytics for **20+ PE/M&A transactions** |
-| Social Impact | Data infra supporting **15 families**, +**30% income** |
+I built [SponsorScope](https://chengwu-data.github.io/sponsorscope/), a job inbox that rules out roles that can't hire an international student. It scans company job boards every day. A GitHub Action in this repo reads what the scan found and rewrites the section below three times a day, so these numbers are real and current, not a screenshot.
+
+<!-- SS:START -->
+<p align="center"><img src="assets/scan.svg?v=1795033836" alt="Apply, Ask first and Skip counts for the last 24 hours and 7 days" width="640"></p>
+
+My scan read **228 company job boards (39,245 open roles)** and found **244 new roles in the last 24 hours**, of which **77** clear my limits. Roles with an Apply verdict in the last 7 days, by direction:
+
+| Direction | Apply roles |
+|---|---:|
+| Product operations & strategy | 44 |
+| Product, growth & customer analytics | 30 |
+| GTM & revenue operations | 25 |
+| Strategy & business operations | 23 |
+| Solutions & value consulting | 19 |
+| AI deployment & automation | 16 |
+| Pricing & monetization | 5 |
+| Customer strategy & commercial ops | 3 |
+
+<sub>Updated Nov 18, 2026, 3:30 PM ET by a GitHub Action in this repo.</sub>
+<!-- SS:END -->
 
 ---
 
-### **Projects & Systems**
+## SponsorScope in one minute
 
-> Public versions redacted for confidentiality; code released as generalizable templates.
+It reads tens of thousands of open roles from 228 company job boards, finds the sentence in each posting that says whether the company sponsors visas, checks pay and experience against my own limits, and adds the company's H-1B filing history for that role type. Every verdict shows the words behind it.
 
-#### **Core Systems (Cards View)**
+```mermaid
+flowchart LR
+    A["228 company<br/>job boards"] -->|"GitHub Actions,<br/>3 times a day"| B["Rule engine<br/>verdict, pay, years"]
+    C["Department of Labor<br/>H-1B and green-card filings<br/>1.6M rows"] -->|"quarterly rebuild,<br/>refuses a bad one"| D["1,066 small<br/>data files"]
+    B --> E["Static feed<br/>on a branch"]
+    E --> F["Browser app<br/>no server, no sign-up"]
+    D --> F
+```
+
+**How I checked it.** I labeled real posting sentences by hand and tested the rules on companies they had never seen.
+
+| Test set | Sentences | Accuracy | Skip precision |
+|---|---:|---:|---:|
+| Development, 63 boards | 242 | 99.6% | 100% |
+| Blind test 1, 42 new boards | 223 | 84.3% | 83.1% |
+| Blind test 2, 35 new boards | 101 | 89.1% | 100% |
+
+The blind numbers are the honest ones. Each blind test exposed a rule that was wrong, I fixed it and kept a regression test; after the fixes both sets score 97–98%, but they're no longer blind. I also re-counted H-1B filings for several companies straight from the Department of Labor's raw spreadsheets, and the totals matched.
+
+<details>
+<summary><b>What I learned before building it</b></summary>
+
+<br>
+
+I didn't have time for interviews, so I read and counted 36 public posts by international job seekers.
+
+- 10 of 36 described reaching the final round, or signing an offer, before sponsorship ended it. So the verdict answers "is this worth a week of interviews?".
+- People who landed offers had applied to 400 to 965 roles. So the goal became making volume cheap, not applying less.
+- 8 of 36 posts were "sponsor lists" sold for a comment or a follow. So the tool is free, with no sign-up, and every verdict shows its source sentence.
+
+</details>
+
+<details>
+<summary><b>What it can't do yet</b></summary>
+
+<br>
+
+- It filters by title first, so a role can still turn out off-target once the description is read.
+- 74 Workday sites are connected, so coverage of large employers is partial.
+- A filing is a request, not an approval: company history is evidence about the past, not a promise about a role.
+
+</details>
+
+[Try it](https://chengwu-data.github.io/sponsorscope/) · [Read the case study](https://chengwu-data.github.io/projects/sponsorscope/) · [Code and tests](https://github.com/ChengWu-Data/chengwu-data.github.io/tree/main/sponsorscope)
+
+---
+
+## Other work
+
+| Project | What it is |
+|---|---|
+| [MultiDocRAG](https://github.com/ChengWu-Data/MultiDocRAG) | Question answering over many PDFs with retrieval and a refusal rule. I built a 27-question benchmark and raised grounded-answer accuracy from 62% to 87%. |
+| [SF crime and neighborhood data](https://github.com/ChengWu-Data/sf-crime-socioeconomic-analysis) | Panel and count models linking 900k+ police incidents to census data by tract and year. |
+| [USD/CAD trend strategy](https://github.com/ChengWu-Data/Exponential-Smoothing-Trend-Strategy-with-Parameter-Tuning-Exit-Rules) | Exponential-smoothing signals with a full parameter search and trade-level evaluation; Sharpe ratio rose from 0.26 to 0.45. |
+| [Housing price analysis](https://github.com/ChengWu-Data/Housing-Price-Prediction-An-Exploratory-Analysis) | Ridge, LASSO and random forest on the Ames housing data to find what drives price. |
+| [Iris recognition](https://github.com/ChengWu-Data/iris-recognition-system) | A classical biometric pipeline from a 2003 paper, built from scratch for a Columbia course. |
+
+---
+
+## How I work
+
+- **Research first.** I start from what users actually do and say, then write the spec.
+- **Measure before claiming.** Nothing goes on a page until it has passed a blind test, an independent re-count, or a real posting I read myself.
+- **Say what it can't do.** Every project of mine has a limits section.
+- **AI as a pair programmer.** I define the problem, the rules and the tests; Claude Code writes much of the code at my direction, and I check what it produces the way I'd check an analyst's work.
+
+## Tools
+
+**Analysis:** Python, SQL, R, Stata, Excel  
+**Modeling:** scikit-learn, XGBoost, causal inference and experiment design  
+**Data and apps:** PySpark, dbt, Streamlit, Power BI, Tableau  
+**AI:** LangChain, FAISS, Sentence-Transformers, Claude Code
+
+---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Compliance%20Analytics-HTS%20%26%207501-7b68ee?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Demand%20Forecasting-Elasticity%20%26%20Segmentation-6f62d4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Portfolio%20Risk-Factor%20Models%20%26%20Dashboards-5b4bb7?style=for-the-badge">
+  <a href="https://chengwu-data.github.io/">chengwu-data.github.io</a> · cheng.w@columbia.edu
 </p>
-
-#### **📊 Table View**
-
-| Project | Description | Tech |
-|---------|------------|------|
-| **tarte-compliance-analytics** *(WIP)* | HTS mapping logic + 7501 audit validation pipelines | Python, SQL, PowerQuery |
-| **biotech-demand-forecasting** | Elasticity experiments + Spark pipelines | Python, Spark/Dask, Scikit |
-| **portfolio-risk-dashboard** | Factor models + return benchmarking | Python, SQL, Power BI |
-| **social-impact-metrics** | Rural education + logistics dashboards | SQL, Dash, Logging Pipelines |
-
----
-
-### **System Architecture (Diagrams)**
-
-
-#### **1️⃣ Compliance / HTS + 7501 Workflow**
-
-```mermaid
-flowchart LR
-A[SKU Metadata] --> B[NAV DB]
-B --> C[HTS Classification Engine]
-C --> D[7501 Entry Audit]
-D --> E[Duty Validation / Exceptions]
-E --> F[Compliance Dashboard]
-```
-
----
-
-### **2️⃣ Biotech Forecasting System**
-
-```mermaid
-flowchart LR
-    Data[Transactions + Seasonality] --> Seg[Clustering / Segmentation]
-    Seg --> Elasticity[Price Elasticity Models]
-    Elasticity --> Forecast[Forecast Engine]
-    Forecast --> Dash[Product/Manager Dashboards]
-```
-
----
-
-### **3️⃣ Portfolio Analytics System**
-
-```mermaid
-flowchart LR
-    Market[Market Data + Filings + FX] --> Factors[Factor Construction]
-    Factors --> Model[Regression / Scenario Models]
-    Model --> Risk[Risk Dashboards / Exposure Reports]
-```
-
-### **4️⃣ Social Impact Data Loop**
-
-```mermaid
-flowchart LR
-    Survey[Field Surveys + Sales Data] --> SQL[SQL Pipelines]
-    SQL --> Metrics[Impact Metrics]
-    Metrics --> Funding[Resource Allocation Decisions]
-    Funding --> Program[Program Changes]
-    Program --> Survey
-```
-
----
-
-### **Methodology Library**
-
-Reusable frameworks (beyond code):
-
-- **Commodity Code Consistency Mapping**  
-  Framework for mapping HTS codes across SKU variants and regions
-
-- **Elasticity Experimentation Protocol**  
-  Systematic pricing test design (A/B + lift attribution)
-
-- **Cross-System Reconciliation Strategy**  
-  Align metadata across NAV, customs filings, logistics, and SKU catalogs
-
-- **Impact Evaluation (Semi-Experimental)**  
-  Evaluation design for development intervention outcomes
-
----
-
-### **Tech Stack**
-
-**Core Analysis**  
-`Python` · `SQL` · `R`
-
-**Infra / Pipelines**  
-`Spark` · `Dask` · `AWS` · `ETL Pipelines`
-
-**Business BI & Ops**  
-`Power BI` · `Plotly` · `Dash` · `Excel/VBA`
-
-**Domains**  
-`Compliance` · `Pricing/Forecasting` · `Portfolio Analytics` · `Social Impact Data`
-
----
-
-
-
-
-
-
-
-
-
-### **📍 Roadmap (2025)**
-
-**🟣 Compliance Systems**
-> Scaling trade classification with validation + observability
-- CI checks for HTS mapping drift
-- Exception reporting for SKU onboarding
-
-**🟣 Forecasting Infra**
-> Closing the loop between pricing experiments & operational decisions
-- Publish demand modeling templates
-- Add seasonal elasticity dashboards
-
-**🟣 Cross-System Alignment**
-> Eliminating fragmentation across NAV / customs / product catalog
-- Reconciliation CLI tool
-- Metadata schema consistency rules
-
-**🟣 Impact & Policy**
-> Turning data into resource allocation decisions
-- Open-source impact scoring framework
-- Quantitative evaluation case studies
-
----
-
-### **📫 Contact**
-
-📧 **Email:** cheng.w@columbia.edu  
-🌐 **Website:** https://chengwu-data.github.io/  
-💼 **LinkedIn:** https://www.linkedin.com/in/cheng-wu-1ab27922a/
-
-<p align="center"><i>Work in progress — building systems that make data useful.</i> 🚀</p>
-
-
-
-
-
-
-
-
-
