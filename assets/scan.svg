@@ -6,17 +6,17 @@ text{font:13px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:#24292f}
 @media (prefers-color-scheme:dark){text{fill:#e6edf3}.m{fill:#8b949e}.a{fill:#2ea66a}.k{fill:#d29a3a}.s{fill:#e0584a}}
 </style>
 <text x="0" y="37">Last 24 hours</text>
-<rect class="a" x="110.0" y="20" width="71.4" height="26" rx="3"/>
-<text class="w" x="145.7" y="38" text-anchor="middle">1</text>
-<rect class="k" x="181.4" y="20" width="0.0" height="26" rx="3"/>
-<rect class="s" x="181.4" y="20" width="428.6" height="26" rx="3"/>
-<text class="w" x="395.7" y="38" text-anchor="middle">6</text>
+<rect class="a" x="110.0" y="20" width="175.7" height="26" rx="3"/>
+<text class="w" x="197.8" y="38" text-anchor="middle">39</text>
+<rect class="k" x="285.7" y="20" width="4.5" height="26" rx="3"/>
+<rect class="s" x="290.2" y="20" width="319.8" height="26" rx="3"/>
+<text class="w" x="450.1" y="38" text-anchor="middle">71</text>
 <text x="0" y="81">Last 7 days</text>
-<rect class="a" x="110.0" y="64" width="172.7" height="26" rx="3"/>
-<text class="w" x="196.3" y="82" text-anchor="middle">268</text>
-<rect class="k" x="282.7" y="64" width="20.0" height="26" rx="3"/>
-<rect class="s" x="302.7" y="64" width="307.3" height="26" rx="3"/>
-<text class="w" x="456.3" y="82" text-anchor="middle">477</text>
+<rect class="a" x="110.0" y="64" width="171.7" height="26" rx="3"/>
+<text class="w" x="195.8" y="82" text-anchor="middle">240</text>
+<rect class="k" x="281.7" y="64" width="20.0" height="26" rx="3"/>
+<rect class="s" x="301.7" y="64" width="308.3" height="26" rx="3"/>
+<text class="w" x="455.9" y="82" text-anchor="middle">431</text>
 <rect class="a" x="110" y="112" width="10" height="10" rx="2"/>
 <text class="m" x="125" y="122">Apply: nothing rules me out</text>
 <rect class="k" x="300" y="112" width="10" height="10" rx="2"/>
