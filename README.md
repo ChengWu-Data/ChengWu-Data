@@ -23,22 +23,21 @@ I'm graduating in December 2026 and looking for full-time roles in **GTM and rev
 I built [SponsorScope](https://chengwu-data.github.io/sponsorscope/), a job inbox that rules out roles that can't hire an international student. It scans company job boards every day. A GitHub Action in this repo reads what the scan found and rewrites the section below three times a day, so these numbers are real and current, not a screenshot.
 
 <!-- SS:START -->
-<p align="center"><img src="assets/scan.svg?v=1795666185" alt="Apply, Ask first and Skip counts for the last 24 hours and 7 days" width="640"></p>
+<p align="center"><img src="assets/scan.svg?v=1795728677" alt="Apply, Ask first and Skip counts for the last 24 hours and 7 days" width="640"></p>
 
-My scan read **228 company job boards (40,830 open roles)** and found **81 new roles in the last 24 hours**, of which **35** clear my limits. Roles with an Apply verdict in the last 7 days, by direction:
+My scan read **228 company job boards (42,132 open roles)** and found **71 new roles in the last 24 hours**, of which **28** clear my limits. Roles with an Apply verdict in the last 7 days, by direction:
 
 | Direction | Apply roles |
 |---|---:|
-| Product, growth & customer analytics | 37 |
-| Product operations & strategy | 28 |
-| GTM & revenue operations | 20 |
-| AI deployment & automation | 15 |
-| Solutions & value consulting | 15 |
+| Product, growth & customer analytics | 29 |
+| Product operations & strategy | 24 |
+| GTM & revenue operations | 19 |
 | Strategy & business operations | 15 |
+| AI deployment & automation | 14 |
+| Solutions & value consulting | 12 |
 | Customer strategy & commercial ops | 3 |
-| Pricing & monetization | 2 |
 
-<sub>Updated Nov 25, 2026, 11:09 PM ET by a GitHub Action in this repo.</sub>
+<sub>Updated Nov 26, 2026, 4:31 PM ET by a GitHub Action in this repo.</sub>
 <!-- SS:END -->
 
 ---
