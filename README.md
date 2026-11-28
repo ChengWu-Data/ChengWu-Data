@@ -23,13 +23,13 @@ I'm graduating in December 2026 and looking for full-time roles in **GTM and rev
 I built [SponsorScope](https://chengwu-data.github.io/sponsorscope/), a job inbox that rules out roles that can't hire an international student. It scans company job boards every day. A GitHub Action in this repo reads what the scan found and rewrites the section below three times a day, so these numbers are real and current, not a screenshot.
 
 <!-- SS:START -->
-<p align="center"><img src="assets/scan.svg?v=1795838055" alt="Apply, Ask first and Skip counts for the last 24 hours and 7 days" width="640"></p>
+<p align="center"><img src="assets/scan.svg?v=1795896104" alt="Apply, Ask first and Skip counts for the last 24 hours and 7 days" width="640"></p>
 
-My scan read **228 company job boards (39,023 open roles)** and found **12 new roles in the last 24 hours**, of which **2** clear my limits. Roles with an Apply verdict in the last 7 days, by direction:
+My scan read **228 company job boards (37,787 open roles)** and found **12 new roles in the last 24 hours**, of which **2** clear my limits. Roles with an Apply verdict in the last 7 days, by direction:
 
 | Direction | Apply roles |
 |---|---:|
-| Product, growth & customer analytics | 19 |
+| Product, growth & customer analytics | 18 |
 | Product operations & strategy | 12 |
 | GTM & revenue operations | 10 |
 | Strategy & business operations | 9 |
@@ -37,7 +37,7 @@ My scan read **228 company job boards (39,023 open roles)** and found **12 new r
 | Solutions & value consulting | 7 |
 | Customer strategy & commercial ops | 3 |
 
-<sub>Updated Nov 27, 2026, 10:54 PM ET by a GitHub Action in this repo.</sub>
+<sub>Updated Nov 28, 2026, 3:01 PM ET by a GitHub Action in this repo.</sub>
 <!-- SS:END -->
 
 ---
